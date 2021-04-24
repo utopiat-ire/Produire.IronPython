@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+
+<head>
+	<meta http-equiv="Content-Language" content="ja">
+	<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="script.js"></script>
+	<title>ニシキヘビ</title>
+</head>
+
+<body>
+<div class="header">
+	<div class="navigation">
+		<a href="index.htm">動的言語プラグイン</a> &gt; ニシキヘビ</div>
+	<div class="left">
+		ニシキヘビ</div>
+</div>
+<div class="context">
+	<h2>概要</h2>
+	<blockquote>
+		<p>IronPythonを操作します</p>
+		<p>
+		<img border="0" src="img/static.png" width="63" height="22" alt="静的種類"></p>
+		<h3>必要プラグイン</h3>
+		<p>動的言語プラグイン（<a href="index.htm">PDlr.dll</a>）</p>
+	</blockquote>
+	<h2><a name="手順">手順</a></h2>
+	<div id="methods">
+		<table border="1" class="doctable">
+			<tr>
+				<th>手順名</th>
+				<th>助詞</th>
+				<th>結果</th>
+			</tr>
+			<tr>
+				<th><a name="食わせる">食わせる</a></th>
+				<th class="param">【自分】に【ソースプログラム】を</th>
+				<th></th>
+			</tr>
+			<tr>
+				<td colspan="3" class="rem">
+				<p>ソースコードを実行して評価結果を返します</p>
+				</td>
+			</tr>
+			</table>
+	</div>
+	<p>&nbsp;</p>
+	<h2><a name="実行例">実行例</a></h2>
+	<p>IronPythonで書かれたプログラムを実行して、戻り値を表示します。</p>
+	<div class="insert" onclick="insert(prg);"></div>
+	<div class="copy" onclick="copy(prg);"></div>
+	<p class="code" id="prg">「PDlr.dll」を利用する。<br>
+	N=11<br>
+	ニシキヘビに「<br>
+	def fib(n):<br>
+	if n &lt;= 1:<br>
+	return n<br>
+	else:<br>
+	return fib(n-1) + fib(n-2);<br>
+	fib([N])<br>
+	」を食わせる。<br>
+	それを表示する。</p>
+	<p>&nbsp;</p>
+<div class="footer">
+	Copyright(C) 2007-2010 utopiat.net.<br>
+	All Rights Reserved. </div>
+</div>
+</body>
+
+</html>

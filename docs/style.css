@@ -1,0 +1,246 @@
+﻿/*
+    プロデルリファレンス　スタイルシート
+    Copyright(C) 2007-2010 utopiat.net
+*/
+/* 基本 */
+* html body {   
+	height: 100%;
+}
+html {
+    overflow /**/: hidden;
+}
+body {
+	margin: 0px;
+}
+img {
+	border: 0px;
+}
+a[href]:link { color: #0066D4; }
+a[href]:visited { color: #0066D4; }
+a[href]:hover { color: #FF6600; }
+a[href]:active { color: #0066D4; }
+
+.usage {
+	font-size: small;
+}
+
+.insert		{
+	padding: 0px;
+	margin: 2px;
+	background-image: url('img/insert.png');
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	cursor: pointer;
+	float:left;
+}
+.copy		{
+	padding: 0px;
+	margin: 2px;
+	background-image: url('img/copy.png');
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	cursor: pointer;
+	float:left;
+}
+
+/* ページデザイン */
+h2 {
+	background-color: #EDFED5;
+	color: #6699FF;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-top-width: 1px;
+	border-bottom: 3px solid #66FF99;
+	border-top: 1px solid #008080;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 1px;
+	margin-top: 0px;
+	border-top-color: #66FF99;
+	border-bottom-color: #D8FE7C;
+	border-top-style: dotted;
+	border-bottom-style: solid;
+}
+h3 {
+	color: #6699FF;
+	font-weight: bold;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-top-width: 1px;
+	border-bottom: 1px solid #00FF00;
+	padding-bottom: 3px;
+}
+/* ヘッダ */
+div.header {
+	position:fixed;
+	width: 100%;
+	height: 80px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-top-width: 1px;
+	background-image: url('bg.png');
+	background-color:white;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #CCC;
+}
+div.header .left {
+	color: #0066FF;
+	float: left;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 50px;
+	margin-left: 10px;
+}
+.navigation {
+	font-size: 0.9em;
+	padding-left: 6px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	height: 25px;
+}
+.navigation a {	
+	text-decoration: none;
+}
+/* 本文 */
+div.context {
+	background-color:white;
+	position:fixed;
+	top:81px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	padding: 10px;
+	overflow:auto;
+	float:left;
+}
+table.doctable {
+}
+table.doctable tr th {
+	border-right: 1px solid #99CCFF;
+	border-bottom: 1px solid #99CCFF;
+	padding: 4px;
+	text-align: left;
+	background-color: #DFEDE3;
+	color: #000066;
+	border-left-width: 1px;
+	border-top-width: 1px;
+	border-style: none solid solid none;
+	vertical-align: top;
+}
+table.doctable tr.head th {
+	text-align: center;
+}
+table.doctable tr th.param {
+	white-space: normal;
+	font-weight: normal;
+}
+table.doctable td {
+	border: 0px none;
+	background-color: #F0FFFF;
+	vertical-align: top;
+	padding: 4px;
+}
+table.doctable td.t {
+	white-space: nowrap;
+}
+table.doctable tr td.rem {
+	border-style: solid;
+	border-color: #FFFFFF;
+	padding-top: 1px;
+	padding-bottom: 5px;
+}
+table.doctable p {
+    margin: 2px;
+    padding: 2px;
+}
+
+/* 書式記号 */
+p.code {
+	border-color: #A7CAD1 #0C4D87 #2788A2 #A7CAD1;
+	color: #000000;
+	border-left: 2px solid #A7CAD1;
+	border-right: 2px solid #2788A2;
+	border-top: 2px solid #A7CAD1;
+	border-bottom: 2px solid #2788A2;
+	padding: 5px;
+	background-color: #DBEEF4;
+	clear:both;
+}
+p.code b {
+	color: #FF00FF;
+}
+p.code i {
+	text-decoration: none;
+	font-weight: bold;
+	color: #008000;
+	font-style: normal;
+}
+p.format {
+	color: #000080;
+	background-color: #FFFFCC;
+	border-left: 2px solid #FF9966;
+	border-top: 2px solid #FF9966;
+	border-right: 2px solid #FF6600;
+	border-bottom: 2px solid #FF6600;
+	padding: 5px;
+	font-weight: bold;
+}
+p.format b {
+	color: #8B0000;
+	font-weight: bold;
+}
+span.flag {
+	color: #FF8000;
+	font-weight: bold;
+}
+span.rem {
+	color: #008000;
+	font-weight: bold;
+}
+span.syntax {
+	color: #8b0000;
+	font-weight: bold;
+}
+.warning {
+	color:red;
+}
+a.iconCreatable {
+	background-image: url(img/creatable.png);
+	background-repeat: no-repeat;
+	width: 63px;
+	height: 22px;
+}
+span.iconControl {
+	background-image: url(img/control.png);
+	background-repeat: no-repeat;
+	width: 63px;
+	height: 22px;
+}
+span.iconStatic {
+	background-image: url(img/static.png);
+	background-repeat: no-repeat;
+	width: 63px;
+	height: 22px;
+}
+span.iconAbstract {
+	background-image: url(img/abstract.png);
+	background-repeat: no-repeat;
+	width: 63px;
+	height: 22px;
+}
+/* フッタ */
+div.footer {
+	padding: 3px;
+	border-top: 1px solid #008080;
+	border-bottom-width: 1px;
+	color: #008000;
+	min-height: 2.2em;
+	text-align: right;
+	border-top-style: dotted;
+}
